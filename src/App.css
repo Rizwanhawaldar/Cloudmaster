@@ -2475,3 +2475,69 @@
     width: 100%;
   }
 }
+
+.route-ready {
+  border-color: #8968b8;
+  background: #f1eafb;
+  box-shadow: inset 0 0 0 1px #c7b3e3;
+}
+
+@media (pointer: coarse) {
+  .module-card {
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+
+  .route-missing .route-name,
+  .route-missing .route-kind {
+    pointer-events: none;
+  }
+
+  .route-missing .route-card {
+    width: 100%;
+    min-width: 0;
+    height: 70px;
+    touch-action: manipulation;
+  }
+
+  .route-ready {
+    background: #ede4f8;
+    box-shadow: inset 0 0 0 1px #b89bdc, 0 0 0 2px #cdbbe650;
+  }
+
+  .drop-instruction {
+    color: #614880;
+  }
+}
+
+.generation-error {
+  max-width: 560px;
+  margin: 16px 0;
+  padding: 10px 12px;
+  border: 1px solid #c4b0df;
+  color: #563e75;
+  background: #f1eafb;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.generate-button:disabled {
+  opacity: 0.65;
+  cursor: progress;
+}
+
+.generation-progress {
+  max-width: 560px;
+  margin: 16px 0;
+  color: #563e75;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.generation-notice {
+  margin: -4px 0 10px;
+  color: #716481;
+  font-size: 10px;
+  line-height: 1.4;
+}

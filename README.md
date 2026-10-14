@@ -16,6 +16,10 @@ Service options are shuffled for each question and repair step. Completing Easy 
 
 Each level currently contains three scenarios. Switching levels starts a fresh score for that run.
 
+## AI scenarios
+
+Fresh scenarios are generated locally in the browser with WebLLM and a small Qwen model. No API key or cloud function is needed. The first generation downloads the model and may take a while; subsequent runs use the browser cache. A current WebGPU-capable browser and compatible graphics hardware are required. Recent scenario titles and prompts are saved locally to reduce repeats.
+
 ## Run locally
 
 ```powershell
