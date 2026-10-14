@@ -1,0 +1,41 @@
+:root {
+  font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
+  --sans: 'Bahnschrift', 'Segoe UI', sans-serif;
+  --display: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --mono: 'Cascadia Code', Consolas, monospace;
+  color: #182324;
+  background: #e9eeeb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  font: inherit;
+}
+
+::selection {
+  color: #101819;
+  background: #f4b54d;
+}
